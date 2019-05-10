@@ -1,0 +1,22 @@
+\begin{frame}{Macro Model: Design}
+\input{fig/micro-schematic.tex}
+\end{frame}
+
+\begin{frame}{Macro Model: Design}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+We model each direction of travel on each highway as a separate one-dimensional chain of highway segments.
+
+\begin{align*}
+\frac{dN_i}{dt} = v_{i} \times \rho_{i-1} - v_{i+1} \times \rho_{i} + \Delta C_i - \Delta C_{i + 1}
+\end{align*}
+
+
+
+\end{column}
+
+\begin{column}{0.5\textwidth}
+\input{fig/ODE-schematic.tex}
+\end{column}
+\end{columns}
+\end{frame}
